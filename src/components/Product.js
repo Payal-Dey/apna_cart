@@ -3,11 +3,13 @@ import React from "react";
 export default function Product(props) {
   return (
     <div className="row mt-3">
-      <div className="col-5">
-        <h2>
+      <div className="col-3">
+        <h4>
           {props.product.name}
-          <span className="badge bg-secondary">₹{props.product.price}</span>
-        </h2>
+        </h4>
+      </div>
+      <div className="col-2">
+          <h4><span className="badge bg-secondary col-8">₹ {props.product.price}</span></h4>
       </div>
       <div className="col-3">
         <div

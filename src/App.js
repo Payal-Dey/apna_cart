@@ -50,7 +50,7 @@ function App() {
   const resetQuantity = () => {
     let newProductList = [...productList];
     newProductList.map((products) => {
-      products.quantity = 0;
+      return products.quantity = 0;
     });
     setProductList(newProductList);
     setTotalAmount(0);
@@ -78,7 +78,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <main className="container mt-5">
+      <main className="container mt-4">
         <AddItem addItem={addItem}/>
         <ProductList
           productList={productList}
